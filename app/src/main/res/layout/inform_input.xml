@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_700">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="@string/form_input"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nim"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jurusan"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/daftar_jurusan"
+                android:outlineAmbientShadowColor="@color/black"
+                android:padding="15dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prodi"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/listprodi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/daftar_prodi"
+                android:outlineAmbientShadowColor="@color/black"
+                android:padding="15dp"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Golongan Darah"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <CheckBox
+                    android:id="@+id/g_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <CheckBox
+                    android:id="@+id/g_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="B" />
+
+                <CheckBox
+                    android:id="@+id/g_ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="AB" />
+
+                <CheckBox
+                    android:id="@+id/g_o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="O" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <RadioGroup
+                    android:id="@+id/jenis_klmn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/laki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Laki-Laki" />
+
+                    <RadioButton
+                        android:id="@+id/perempuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Perempuan" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="double clik"
+                android:inputType="date" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Handphone"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="08.."
+                android:maxLength="12"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="masukan email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cek Lokasi pendaftaran"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ipk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="double klik dan tunggu 5 detik"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Alamat"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/alamt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Alamat rumah"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload Foto"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/uplods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="browse" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="50dp"
+                    android:background="@drawable/circula_border"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp" />
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Simpan" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

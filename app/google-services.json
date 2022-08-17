@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "748314800985",
+    "project_id": "danaif19d",
+    "storage_bucket": "danaif19d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748314800985:android:bf3b6c473db0465aa45248",
+        "android_client_info": {
+          "package_name": "com.maruf.design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748314800985-04vpun5to8po2adom8n2acuj1kav2oq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maruf.design",
+            "certificate_hash": "9184b5259b2b6b450b6e2fec3f776f8416065994"
+          }
+        },
+        {
+          "client_id": "748314800985-q61og816jn9i29akkmqanl39tnlnsqgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGtXGfBvYOT-xhUt3D8qiypr5chOZkfiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748314800985-q61og816jn9i29akkmqanl39tnlnsqgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

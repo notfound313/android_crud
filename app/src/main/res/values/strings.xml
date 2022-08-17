@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CRUD 19SA1205</string>
+    <string name="nim">kode pos</string>
+    <string name="nama">Nama</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="simpan">Simpan</string>
+    <string name="form_input">Form Input</string>
+    <string-array name="daftar_jurusan">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Teknologi Informasi</item>
+        <item>Teknik Sipil</item>
+    </string-array>
+    <string-array name="daftar_prodi">
+        <item>Ilmu Komputer</item>
+        <item>Bisnis dan Teknologi</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
